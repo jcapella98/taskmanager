@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.file-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.section-creator {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.section-creator input {
+  flex: 1;
+  padding: 10px;
+}
+
+.section {
+  background: #f1f3f6;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  border-left: 4px solid #007bff;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  border-left-color: #28a745;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.task-actions button:hover {
+  background-color: #ccc;
+}
